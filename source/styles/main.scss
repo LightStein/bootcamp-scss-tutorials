@@ -6,6 +6,8 @@ $color-5: #3D4C53;
 $color-6: #62A783;
 $color-white: #FFFFFF;
 
+@import 'reset.scss';
+
 * {
     box-sizing: border-box;
     margin: 0;
