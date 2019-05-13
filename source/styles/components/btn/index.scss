@@ -39,6 +39,13 @@
         }
 
         &.round {
+            $corners: 3, 7, 12, 20;
+
+            @each $corner in $corners{
+                &-#{$corner}{
+                    border-radius: $corner + px;
+                }
+            }
 
             &-3 {
                 border-radius: 3px;
