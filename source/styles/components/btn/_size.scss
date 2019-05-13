@@ -1,0 +1,7 @@
+@mixin size($font-size, $padding-top: initial, $padding-right: initial, $padding-left: initial, $padding-bottom: initial) {
+    font-size: $font-size;
+    padding-top: $padding-top;
+    padding-right: $padding-right;
+    padding-left: $padding-left;
+    padding-bottom: $padding-bottom;
+}
