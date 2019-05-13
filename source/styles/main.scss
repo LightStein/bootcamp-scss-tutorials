@@ -4,94 +4,104 @@ $color-3: #9A2C4A;
 $color-4: #97C200;
 $color-5: #3D4C53;
 $color-6: #62A783;
-$color-white: #fff;
+$color-white: #FFFFFF;
 
-*{
-    padding: 0;
-    margin: 0;
+* {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-body{
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+body {
     padding-top: 50px;
     padding-left: 50px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
-.row{
+
+.row {
     display: flex;
     align-items: flex-end;
-    .btn{
+
+    .btn {
+        display: inline-block;
         margin-right: 30px;
-        &:last-child{
-            margin-right: 0;
+        padding: 11px 36.1px 11px 36.2px;
+        background-color: $color-1;
+        color: $color-white;
+        font-family: 'Lato', sans-serif;
+        font-size: 14px;
+        font-weight: 900;
+        text-decoration: none;
+
+        &:hover {
+            background-color: $color-3;
+            cursor: pointer;
+        }
+
+        &.medium {
+            padding: 14px 47px;
+            font-size: 18px;
+        }
+
+        &.large {
+            padding: 23px 93px;
+            font-size: 26px;
+        }
+
+        &.x-large {
+            padding: 27px 100px 27px 102px;
+            font-size: 36px;
+        }
+
+        &.round {
+
+            &-3 {
+                border-radius: 3px;
+            }
+
+            &-7 {
+                border-radius: 7px;
+            }
+
+            &-12 {
+                border-radius: 12px;
+            }
+
+            &-20 {
+                border-radius: 20px;
+            }
         }
     }
-    
+
+    &:last-child {
+        margin-right: 0;
+    }
 }
 
-.btn{
-    color: $color-white;
-    background-color: $color-1;
-    padding: 11px 36.1px 11px 36.2px;
-    text-decoration: none;
-    font-family: 'Lato', sans-serif;
-    font-weight: 900;
-    font-size: 14px;
-    display: inline-block;
+.bg-color {
 
-    &:hover{
-        background-color: $color-3;
-        cursor: pointer;
-    }
-
-    &.medium{
-        font-size: 18px;
-        padding: 14px 47px;
-    }
-    &.large{
-        font-size: 26px;
-        padding: 23px 93px
-    }
-    &.x-large{
-        font-size: 36px;
-        padding: 27px 100px 27px 102px;
-    }
-  &.round{
-    &-3{
-      border-radius:3px;
-    }
-    &-7{
-      border-radius:7px;
-    }
-    &-12{
-      border-radius:12px;
-    }
-    &-20{
-      border-radius:20px;
-    }
-  }
- 
-}
-
- .bg-color{
-    &-1{
+    &-1 {
         background-color: $color-1;
     }
-    &-2{
+
+    &-2 {
         background-color: $color-2;
     }
-    &-3{
+
+    &-3 {
         background-color: $color-3;
     }
-    &-4{
+
+    &-4 {
         background-color: $color-4;
     }
-    &-5{
+
+    &-5 {
         background-color: $color-5;
     }
-    &-6{
+
+    &-6 {
         background-color: $color-6;
     }
 }
-
