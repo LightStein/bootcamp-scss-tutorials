@@ -6,7 +6,6 @@
 @import 'components/btn/index';
 
 .bg-color {
-
     @each $ind, $color in $palette {
         
         &-#{$ind} {
@@ -14,4 +13,3 @@
         }
     }
 }
-
