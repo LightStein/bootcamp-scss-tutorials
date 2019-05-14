@@ -7,27 +7,11 @@
 
 .bg-color {
 
-    &-1 {
-        background-color: $color-1;
-    }
-
-    &-2 {
-        background-color: $color-2;
-    }
-
-    &-3 {
-        background-color: $color-3;
-    }
-
-    &-4 {
-        background-color: $color-4;
-    }
-
-    &-5 {
-        background-color: $color-5;
-    }
-
-    &-6 {
-        background-color: $color-6;
+    @each $ind, $color in $palette {
+        
+        &-#{$ind} {
+            background-color: $color;
+        }
     }
 }
+
